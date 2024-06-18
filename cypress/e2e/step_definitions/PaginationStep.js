@@ -71,6 +71,7 @@ Then(/^the user should see “Tokyo” City with the info below and an image$/, 
 paginationPage.getTokyoCityInfo().each(($el, index) => {
     cy.wrap($el).should('have.text', city[index])
   })
+  paginationPage.getCityImage().should('be.visible')
 });
 
 
@@ -79,6 +80,7 @@ Then(/^the user should see “Delhi” City with the info below and an image$/, 
   paginationPage.getDelhiCityInfo().each(($el, index) => {
       cy.wrap($el).should('have.text', city[index])
     })
+    paginationPage.getCityImage().should('be.visible') 
 });
 
 
@@ -87,6 +89,7 @@ Then(/^the user should see “Shangai“ City with the info below and an image$/
   paginationPage.getShangaiCityInfo().each(($el, index) => {
       cy.wrap($el).should('have.text', city[index])
     })
+    paginationPage.getCityImage().should('be.visible')
 });
 
 
@@ -96,6 +99,7 @@ Then(/^the user should see “Sao Paulo“ City with the info below and an image
   paginationPage.getSaoPauloCityInfo().each(($el, index) => {
       cy.wrap($el).should('have.text', city[index])
     })
+    paginationPage.getCityImage().should('be.visible')
 });
 
 
@@ -104,4 +108,5 @@ Then(/^the user should see “Mexico City” City with the info below and an ima
   paginationPage.getMexicoCityInfo().each(($el, index) => {
       cy.wrap($el).should('have.text', city[index])
     })
+    paginationPage.getCityImage().should('be.visible')
 });

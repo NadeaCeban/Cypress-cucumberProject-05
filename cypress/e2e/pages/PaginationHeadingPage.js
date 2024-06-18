@@ -39,5 +39,10 @@ getShangaiCityInfo () {
     getMexicoCityInfo () {
       return cy.get('.Pagination_pagBodyData__vG6oj > p')
       }
+
+getCityImage() {
+  return cy.get('.city_image')
+}
+
 }
 export default PaginationPage;
